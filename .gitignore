@@ -26,3 +26,10 @@ test_download3/
 *.his
 *.BAK
 *.bak
+
+# Use-case model and solution data stay local unless deliberately reviewed and force-added.
+/UseCases/**/*.xml
+/UseCases/**/*.csv
+/UseCases/**/*.zip
+/UseCases/**/*.db
+/UseCases/**/*.parquet

@@ -9,6 +9,8 @@ This repository contains reusable, ready-to-run automation scripts for PLEXOS an
 | PLEXOS | [PLEXOSReadme.md](PLEXOSReadme.md) |
 | Aurora | [AuroraReadme.md](AuroraReadme.md) |
 
+For local PLEXOS coding, start with [SDK version compatibility](Documentation/SDK_Version_Compatibility.md), [EditScenarioProperty](Automation/PLEXOS/EditScenarioProperty/), [LocalRun](Automation/PLEXOS/LocalRun/), and the [Solution Parquet query cookbook](Documentation/Solution_Parquet_Query_Cookbook.md). [UseCases](UseCases/) holds separately verified knowledge about individual models.
+
 ---
 
 ## Table of Contents
