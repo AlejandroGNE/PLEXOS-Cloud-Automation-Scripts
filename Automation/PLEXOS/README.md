@@ -23,6 +23,7 @@ For guidance on when to use a class, see [Creating Custom Automation Scripts](#c
 | Script | Purpose | Can Be Imported |
 |--------|---------|-----------------|
 | **[DownloadFromDataHub](DownloadFromDataHub/)** | Download files from DataHub to local | ✅ `DataHubDownloader` class |
+| **[EditScenarioProperty](EditScenarioProperty/)** | Copy an existing XML tree, edit one scenario-tagged property with the PLEXOS SDK, and verify an XML round-trip | — Standalone script |
 | **[UploadToDataHub](UploadToDataHub/)** | Upload local files to DataHub | ✅ `DataHubUploader` class |
 | **[CsvToParquet](CsvToParquet/)** | Convert CSV to compressed Parquet | ✅ `CsvParquetConverter` class |
 | **[ParquetToCsv](ParquetToCsv/)** | Convert Parquet to CSV | ✅ `ParquetCsvConverter` class |
