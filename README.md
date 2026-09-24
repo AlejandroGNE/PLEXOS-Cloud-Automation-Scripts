@@ -137,8 +137,7 @@ The following SDKs are **pre-installed** in the cloud execution environment:
 For local testing, both SDKs are available through your CLI installation:
 
 1. **Install the CLI** from the `Energy Exemplar Web / Marketplace` (available in all environments)
-2. **Locate the wheel files** in your CLI installation directory:
-   - Windows: `%LOCALAPPDATA%\Programs\PlexosCloud\`
+2. **Locate the wheel files** beside your installed CLI. Windows installation directory names vary by release (for example, `PlexosCloud` or `PLEXOS.Cloud` under `%LOCALAPPDATA%\Programs`). Find `plexos-cloud.exe`, then inspect that installation's `*.whl` files and `Documentation/` folder.
    - Linux/Mac: Check your CLI installation path
 3. **Install both SDKs**:
    ```bash
@@ -154,6 +153,8 @@ Your CLI installation includes auto-generated documentation:
 - Updated automatically with each CLI version
 
 Copies of key reference files are also checked in to this repository under [`Documentation/`](Documentation/) — see the [SDK & CLI Documentation](#sdk--cli-documentation) section below.
+
+**Check versions before copying an SDK example.** Repository reference files may describe a newer SDK than the wheel bundled with your installed CLI. See [SDK version compatibility](Documentation/SDK_Version_Compatibility.md) for a quick check and a concrete example of this difference.
 
 #### Using Custom Python Packages
 
@@ -186,6 +187,7 @@ The [`Documentation/`](Documentation/) folder contains SDK and CLI reference fil
 |---|---|---|
 | [`CloudSDK.md`](Documentation/CloudSDK.md) | CloudSDK method signatures, parameter names, and response shapes | `## Datahub` → `datahub.download`, `datahub.upload` |
 | [`PLEXOS_SDK_TLDR.md`](Documentation/PLEXOS_SDK_TLDR.md) | PLEXOS SDK quick-reference cheat sheet | Full file |
+| [`SDK_Version_Compatibility.md`](Documentation/SDK_Version_Compatibility.md) | Match repository examples to the installed SDK wheel | Version and feature checks |
 | [`Repository_Overview.md`](Documentation/Repository_Overview.md) | Repo structure, script types, design rules, task definition format | Full file |
 
 ---
