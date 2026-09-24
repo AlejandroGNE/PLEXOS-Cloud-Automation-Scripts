@@ -156,6 +156,8 @@ For local workflows outside of cloud simulation context, see the **[Automation S
 |--------|-------------|----------|
 | CsvToParquet | Converts CSV files to compressed Parquet format; supports single file or batch directory conversion | [Automation/PLEXOS/CsvToParquet/](Automation/PLEXOS/CsvToParquet/) |
 | EditScenarioProperty | Copies an existing XML model tree, adds one scenario-tagged property through the PLEXOS SDK, and verifies export/reimport | [Automation/PLEXOS/EditScenarioProperty/](Automation/PLEXOS/EditScenarioProperty/) |
+| LocalRun | Runs a Model from XML with PLEXOS64.exe and optionally converts its solution ZIP to Parquet | [Automation/PLEXOS/LocalRun/](Automation/PLEXOS/LocalRun/) |
+| SolutionSeriesCatalog | Lists the reported class, property, unit, and period combinations in a Parquet solution | [Automation/PLEXOS/SolutionSeriesCatalog/](Automation/PLEXOS/SolutionSeriesCatalog/) |
 | DownloadFromDataHub | Downloads one or more files from DataHub to a local directory for use in local workflows | [Automation/PLEXOS/DownloadFromDataHub/](Automation/PLEXOS/DownloadFromDataHub/) |
 | ParquetToCsv | Converts Parquet files to CSV format; supports single file or batch directory conversion | [Automation/PLEXOS/ParquetToCsv/](Automation/PLEXOS/ParquetToCsv/) |
 | TimeSeriesComparison | Compares 2–4 time-series datasets locally with statistics, plots, and optional DataHub upload | [Automation/PLEXOS/TimeSeriesComparison/](Automation/PLEXOS/TimeSeriesComparison/) |
