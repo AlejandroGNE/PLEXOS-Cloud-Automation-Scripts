@@ -35,3 +35,9 @@ WHERE f.ChildClassName = ?
 Use query parameters for class, property, and year. Check `UnitValue` **before** summing or comparing values; an annual energy series and an interval power series are not interchangeable. Verify the expected number of objects and periods. A configured report may omit inactive objects or properties that were never requested. Missing series do not automatically mean zero.
 
 For sampled simulations, prefer a reported annual total when it represents the desired measure. If rebuilding annual values from sampled intervals, inspect the solution's sample weights and PLEXOS aggregation rules instead of summing the sampled intervals as if they were a full year.
+
+## Check value coverage, not only period metadata
+
+For each series needed by a report, compare the expected calendar with timestamps that actually have values. A period table can list the full horizon while a reported series ends early. Group by `SeriesId` and inspect the value count, distinct period count, first and last timestamp, and duplicate periods. Then check for missing intervals against the expected calendar; counts alone cannot detect a gap paired with a duplicate. Record the class, property, unit, phase, period type, and sample used for this check. See [verified workflow patterns](Verified_PLEXOS_Workflow_Patterns.md) for an observed incomplete-year example.
+
+Before joining series to geographic memberships, count memberships per object for the selected relationship. If any object maps to multiple locations, define an allocation rule and reconcile the aggregate with the unjoined system total. A direct join can multiply energy or curtailment. For cross-scenario reports, also record each solution's source model and run settings, including random seed, before interpreting differences.

@@ -131,6 +131,7 @@ See the other files in this `Documentation/` folder:
 |---|---|
 | [`CloudSDK.md`](CloudSDK.md) | Full CloudSDK API reference — method signatures, parameters, response shapes |
 | [`PLEXOS_SDK_TLDR.md`](PLEXOS_SDK_TLDR.md) | PLEXOS SDK quick-reference cheat sheet |
+| [`Verified_PLEXOS_Workflow_Patterns.md`](Verified_PLEXOS_Workflow_Patterns.md) | Field-tested checks for SDK edits, local runs, solution validation, and scenario comparisons |
 
 ---
 
